@@ -1,28 +1,41 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-body {
-    display: flex;
+header {
     width: 100vw;
-    height: 100vh;
-    justify-content: space-evenly;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: black;
+    color: whitesmoke;
+    font: italic 2em arial;
+}
+main{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: rebeccapurple;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 85vh;
+    background-color: black;
 }
 
-body::before {
-    content: "Spinner Loader";
-    position: absolute;
-    top: 20vh;
-    font: bolder 3em arial;
-    color: #ffffffaa;
+main>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px blue;
 }
-body::after {
-    content: "Fernando Leonid";
-    position: absolute;
-    top:95vh;
-    font: italic 1em arial;
-    color: #ffffffaa;
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    font: italic .8em/5vh arial;
+    text-align: center;
 }
